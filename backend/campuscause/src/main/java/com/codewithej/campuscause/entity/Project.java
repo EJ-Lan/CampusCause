@@ -31,4 +31,10 @@ public class Project {
     private String category;
     private ProjectStatus status;
     private List<Update> updates;
+
+    public enum ProjectStatus {
+        ACTIVE,
+        COMPLETED,
+        CANCELED
+    }
 }
