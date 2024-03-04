@@ -3,11 +3,12 @@ package com.codewithej.campuscause.entity;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.validator.constraints.Length;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.util.Date;
+import java.time.Instant;
 
 @Getter
 @Setter
@@ -19,11 +20,13 @@ public class Comment {
     private String id;
 
     @DBRef
-    Project project;
+    private Project project;
 
     @DBRef
-    User author;
+    private User author;
 
+    @Length(max = 500, message = "Comment cannot exceed 500 characters")
     private String content;
-    private Date datePosted;
+
+    private Instant datePosted;
 }

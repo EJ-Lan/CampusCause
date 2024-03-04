@@ -26,9 +26,11 @@ public class Project {
 
     private String title;
     private String description;
+
     private BigDecimal goalAmount;
     private BigDecimal currentAmount = BigDecimal.ZERO;
-    private String category;
+
+    private Category category;
     private ProjectStatus status;
     private List<Update> updates;
 
@@ -36,5 +38,24 @@ public class Project {
         ACTIVE,
         COMPLETED,
         CANCELED
+    }
+
+    public enum Category {
+        EDUCATION("Education"),
+        TECHNOLOGY("Technology"),
+        HEALTH("Health"),
+        ENVIRONMENT("Environment"),
+        ARTS("Arts"),
+        SOCIAL("Social");
+
+        private final String displayName;
+
+        Category(String displayName) {
+            this.displayName = displayName;
+        }
+
+        public String getDisplayName() {
+            return displayName;
+        }
     }
 }
