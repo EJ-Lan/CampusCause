@@ -10,10 +10,13 @@ import java.util.Map;
 @SpringBootApplication
 public class CampuscauseApplication {
 
-	public static void main(String[] args) {
+	static {
 		Dotenv dotenv = Dotenv.configure().ignoreIfMissing().load();
-		System.getProperties().putAll((Map<?, ?>) dotenv.entries());
-		SpringApplication.run(CampuscauseApplication.class, args);
+		dotenv.entries().forEach(e -> System.setProperty(e.getKey(), e.getValue()));
 	}
 
+	public static void main(String[] args) {
+		SpringApplication.run(CampuscauseApplication.class, args);
+	}
 }
+
