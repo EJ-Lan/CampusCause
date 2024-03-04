@@ -41,12 +41,12 @@ Ensure you have the following installed:
    ```
 2. **Backend Setup**
 
-  Navigate to the backend directory and run the Spring Boot application:
-  ```bash
-  cd backend
-  ./mvnw spring-boot:run
-  ```
-3. **Frontend Setup**
+   Navigate to the backend directory and run the Spring Boot application:
+   ```bash
+   cd backend
+   ./mvnw spring-boot:run
+   ```
+4. **Frontend Setup**
    
    Navigate to the frontend directory, install dependencies, and start the React application:
    ```bash
@@ -54,7 +54,7 @@ Ensure you have the following installed:
    npm install
    npm start
    ```
-4. **Accessing the Application**
+5. **Accessing the Application**
 
    Visit `http://localhost:3000` in your web browser to view the react frontend.
    The backend API is accessible at `http://localhost:8000`
