@@ -1,7 +1,7 @@
 # CampusCause
 
 ## About
-CampusCause is a crowdfunding platform designed specifically for students to fund their educational projects, research, and extracurricular activities. The platform bridges the gap between students in need of financial support and potential donors interested in fostering academic and extracurricular achievements. Through a user-friendly interface, CampusCause enables students to create funding campaigns, while allowing donors to find and contribute to causes they believe in.
+CampusCause is a crowdfunding platform designed specifically for students to fund their educational projects, research, extracurricular activities and businesses. The platform bridges the gap between students in need of financial support and potential donors interested in fostering academic and extracurricular achievements. Through a user-friendly interface, CampusCause enables students to create funding campaigns, while allowing donors to find and contribute to causes they believe in.
 
 ## Technologies
 This project is built using a range of technologies, ensuring a robust, scalable, and seamless experience:
